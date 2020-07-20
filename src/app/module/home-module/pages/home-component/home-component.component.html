@@ -1,0 +1,309 @@
+<div class="row">
+    <div class="col-md-9">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="nav-font" href="#">Digital Product Catalog</a>
+            </div>
+        </nav>
+        <div class="row mt-2 mt-md-5 col-12" id="content">
+            <div class="col-md-4 d-none d-md-block">
+                <ul>
+                    <li class="list-group-item item"><i class="fa fa-cube mr-2" aria-hidden="true"></i>Marketing Kits
+                    </li>
+                    <li class="list-group-item item"><i class="fa fa-lightbulb-o mr-2" aria-hidden="true"></i>Trainings
+                    </li>
+                    <li class="list-group-item item"><i class="fa fa-book mr-2" aria-hidden="true"></i>Catalog</li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="section p-0" id="carousel">
+                    <div class="row">
+                        <div class="mr-auto ml-auto mb-0">
+                            <div class="card page-carousel">
+                                <ngb-carousel>
+                                    <ng-template ngbSlide>
+                                        <img src="./assets/img/soroush-karimi.jpg" style="height: 15em;"
+                                            alt="Random first slide">
+                                        <div class="carousel-caption">
+                                            <p>Somewhere</p>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <img src="./assets/img/federico-beccari.jpg" style="height: 15em;"
+                                            alt="Random second slide">
+                                        <div class="carousel-caption">
+                                            <p>Somewhere else</p>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <img src="./assets/img/joshua-stannard.jpg" style="height: 15em;"
+                                            alt="Random third slide">
+                                        <div class="carousel-caption">
+                                            <p>Here it is</p>
+                                        </div>
+                                    </ng-template>
+                                </ngb-carousel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6>Selamat Pagi!</h6>
+                <p>Apa yang kamu lakukan hari ini?</p>
+                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"
+                        (focus)="focus=true" (blur)="focus=false">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"
+                                aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="col-12 d-none d-md-block">
+                    <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                            <ngb-tabset [justify]="'left'">
+                                <ngb-tab title="Module">
+                                    <ng-template ngbTabContent>
+                                        <div class="row p-2 border-bottom">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="col-12 p-0 text-left">
+                                                        <h6>Antares</h6>
+                                                    </div>
+                                                    <div class="col-12 p-0 text-left">
+                                                        <h5 style="font-weight: 500;">Pengenalan IoT</h5>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img src="./assets/img/globe.png" style="width: 75%;">
+                                                        </div>
+                                                        <div class="col-md-8 text-left">
+                                                            <li class="item">0 percobaan</li>
+                                                            <li class="item">0 nilai tertinggi</li>
+                                                            <li class="item"><i class="fa fa-certificate"
+                                                                    aria-hidden="true" style="color: red;"></i>
+                                                            </li>
+                                                            <button type="button"
+                                                                class="btn btn-danger btn-link">Pelajari</button>
+                                                            <button type="button" class="btn btn-danger btn-round"><i
+                                                                    class="fa fa-heart"></i> With Icon</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <span class="label label-default"><i class="fa fa-clock-o"
+                                                            aria-hidden="true"></i>
+                                                        Kadaluarsa 29 hari lagi</span>
+                                                    <span class="label label-default">Digital Platform</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row p-2 border-bottom">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="col-12 p-0 text-left">
+                                                        <h6>Antares</h6>
+                                                    </div>
+                                                    <div class="col-12 p-0 text-left">
+                                                        <h5 style="font-weight: 500;">Pengenalan IoT</h5>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img src="./assets/img/globe.png" style="width: 75%;">
+                                                        </div>
+                                                        <div class="col-md-8 text-left">
+                                                            <li class="item">0 percobaan</li>
+                                                            <li class="item">0 nilai tertinggi</li>
+                                                            <li class="item"><i class="fa fa-certificate"
+                                                                    aria-hidden="true" style="color: red;"></i>
+                                                            </li>
+                                                            <button type="button" class="btn btn-danger btn-link"
+                                                                disabled>Pelajari</button>
+
+                                                            <button type="button" class="btn btn-danger btn-round"
+                                                                disabled>Certificate</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <span class="label label-default"><i class="fa fa-clock-o"
+                                                            aria-hidden="true"></i>
+                                                        Kadaluarsa 29 hari lagi</span>
+                                                    <span class="label label-default">Digital Platform</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </ng-template>
+                                </ngb-tab>
+                                <ngb-tab title="Lainnya">
+                                    <ng-template ngbTabContent>
+                                        <div class="col-12">
+                                            <p>Here is your profile.</p>
+                                        </div>
+                                    </ng-template>
+                                </ngb-tab>
+                            </ngb-tabset>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="row p-2" id="mobile-data">
+                    <div class="outer">
+                        <div class="card mr-3">
+
+                        </div>
+                        <div class="card mr-3">
+
+                        </div>
+                        <div class="card mr-3">
+
+                        </div>
+                        <div class="card mr-3">
+
+                        </div>
+                        <div class="card mr-3">
+
+                        </div>
+                        <div class="card mr-3">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mobile-data">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card p-2">
+                                <div class="card-title">Test Taken</div>
+                                <div class="row">
+                                    <div class="col-md-6 text-center">
+                                        <p style="font-size: 24pt; font-weight: bold;">2</p>
+                                    </div>
+                                    <div class="col-md-6"><i class="fa fa-eye" aria-hidden="true"
+                                            style="transform: translateY(150%);"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card p-2">
+                                <div class="card-title">Test Taken</div>
+                                <div class="row">
+                                    <div class="col-md-6 text-center">
+                                        <p style="font-size: 24pt; font-weight: bold;">2</p>
+                                    </div>
+                                    <div class="col-md-6"><i class="fa fa-eye" aria-hidden="true"
+                                            style="transform: translateY(150%);"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card p-2">
+                                <div class="card-title">Test Taken</div>
+                                <div class="row">
+                                    <div class="col-md-6 text-center">
+                                        <p style="font-size: 24pt; font-weight: bold;">2</p>
+                                    </div>
+                                    <div class="col-md-6"><i class="fa fa-eye" aria-hidden="true"
+                                            style="transform: translateY(150%);"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card p-2">
+                                <div class="card-title">Test Taken</div>
+                                <div class="row">
+                                    <div class="col-md-6 text-center">
+                                        <p style="font-size: 24pt; font-weight: bold;">2</p>
+                                    </div>
+                                    <div class="col-md-6"><i class="fa fa-eye" aria-hidden="true"
+                                            style="transform: translateY(150%);"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 p-0 d-none d-md-block">
+        <div class="card bg-grey">
+            <div class="card-body">
+                <div class="text-center"><img src="assets/img/faces/joe-gardner-2.jpg"
+                        class="img-circle img-no-padding img-responsive" style="width: 25%;" alt="Rounded Image"></div>
+                <h5 class="card-title text-center">Joe Gardner</h5>
+                <div class="text-center"> <span class="label label-danger">
+                        Marketing</span></div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="card p-2">
+                            <div class="card-title">Test Taken</div>
+                            <div class="row">
+                                <div class="col-md-6 text-center">
+                                    <p style="font-size: 24pt; font-weight: bold;">2</p>
+                                </div>
+                                <div class="col-md-6"><i class="fa fa-eye" aria-hidden="true"
+                                        style="transform: translateY(150%);"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-2">
+                            <div class="card-title">Test Taken</div>
+                            <div class="row">
+                                <div class="col-md-6 text-center">
+                                    <p style="font-size: 24pt; font-weight: bold;">2</p>
+                                </div>
+                                <div class="col-md-6"><i class="fa fa-eye" aria-hidden="true"
+                                        style="transform: translateY(150%);"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card p-2">
+                            <div class="card-title">Test Taken</div>
+                            <div class="row">
+                                <div class="col-md-6 text-center">
+                                    <p style="font-size: 24pt; font-weight: bold;">2</p>
+                                </div>
+                                <div class="col-md-6"><i class="fa fa-eye" aria-hidden="true"
+                                        style="transform: translateY(150%);"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-2">
+                            <div class="card-title">Test Taken</div>
+                            <div class="row">
+                                <div class="col-md-6 text-center">
+                                    <p style="font-size: 24pt; font-weight: bold;">2</p>
+                                </div>
+                                <div class="col-md-6"><i class="fa fa-eye" aria-hidden="true"
+                                        style="transform: translateY(150%);"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
